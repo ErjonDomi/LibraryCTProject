@@ -1,7 +1,7 @@
-package com.cybertek.library.step_definitions;
+package com.LibraryCT.step_definitions;
 
-import com.cybertek.library.utilities.BrowserUtils;
-import com.cybertek.library.utilities.Driver;
+import com.LibraryCT.utilities.BrowserUtils;
+import com.LibraryCT.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
@@ -16,7 +16,7 @@ public class Hooks {
             scenario.attach(screenShot, "image/png", scenario.getName());
         }
 
-        BrowserUtils.sleep(1);
+        BrowserUtils.wait(1);
         Driver.closeDriver();
     }
 

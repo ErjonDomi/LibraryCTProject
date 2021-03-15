@@ -1,7 +1,7 @@
-package com.cybertek.library.step_definitions;
+package com.LibraryCT.step_definitions;
 
-import com.cybertek.library.pages.UsersPage;
-import com.cybertek.library.utilities.BrowserUtils;
+import com.LibraryCT.pages.UsersPage;
+import com.LibraryCT.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
@@ -16,7 +16,7 @@ public class AddUser_StepDefinitions {
 
     @Then("User should be able to see new user name")
     public void userShouldBeAbleToSeeNewUserName() {
-        BrowserUtils.sleep(3);
+        BrowserUtils.wait(3);
         Assert.assertTrue(usersPage.verifyNewUser());
     }
 
@@ -28,7 +28,7 @@ public class AddUser_StepDefinitions {
 
     @Then("User should be able to edit user information")
     public void userShouldBeAbleToEditUserInformation() {
-        BrowserUtils.sleep(3);
+        BrowserUtils.wait(3);
         usersPage.editUser();
 
     }

@@ -1,6 +1,6 @@
-package com.cybertek.library.step_definitions;
+package com.LibraryCT.step_definitions;
 
-import com.cybertek.library.pages.HomePage;
+import com.LibraryCT.pages.HomePage;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 

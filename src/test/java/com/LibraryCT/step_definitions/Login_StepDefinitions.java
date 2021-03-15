@@ -1,10 +1,10 @@
-package com.cybertek.library.step_definitions;
+package com.LibraryCT.step_definitions;
 
-import com.cybertek.library.pages.HomePage;
-import com.cybertek.library.pages.LoginPage;
-import com.cybertek.library.utilities.BrowserUtils;
-import com.cybertek.library.utilities.ConfigurationReader;
-import com.cybertek.library.utilities.Driver;
+import com.LibraryCT.pages.HomePage;
+import com.LibraryCT.pages.LoginPage;
+import com.LibraryCT.utilities.BrowserUtils;
+import com.LibraryCT.utilities.ConfigurationReader;
+import com.LibraryCT.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -46,7 +46,7 @@ public class Login_StepDefinitions {
         i_enter_username(username);
         i_enter_password(password);
         click_the_sign_in_button();
-        BrowserUtils.sleep(3);
+        BrowserUtils.wait(3);
     }
 
     @When("User click the sign in button")
@@ -58,7 +58,7 @@ public class Login_StepDefinitions {
     @Then("Dashboard should be displayed")
     public void dashboard_should_be_displayed() {
         String expectedTitle = "Library";
-        BrowserUtils.sleep(3);
+        BrowserUtils.wait(3);
         String actualTitle = Driver.getDriver().getTitle();
 
         Assert.assertEquals(actualTitle,expectedTitle);

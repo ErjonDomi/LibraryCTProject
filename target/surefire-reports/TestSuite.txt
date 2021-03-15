@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 532.213 s <<< FAILURE! - in TestSuite
+com.LibraryCT.step_definitions.ParallelRun.setUpClass  Time elapsed: 1.655 s  <<< FAILURE!
+java.lang.NoSuchMethodError: io.cucumber.core.runtime.ObjectFactoryServiceLoader.<init>(Ljava/util/function/Supplier;Lio/cucumber/core/backend/Options;)V
+

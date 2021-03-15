@@ -1,7 +1,7 @@
-package com.cybertek.library.pages;
+package com.LibraryCT.pages;
 
-import com.cybertek.library.pages.base.BasePage;
-import com.cybertek.library.utilities.ConfigurationReader;
+
+import com.LibraryCT.utilities.ConfigurationReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

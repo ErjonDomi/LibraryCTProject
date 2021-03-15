@@ -1,4 +1,4 @@
-package com.LibraryCT.pages.base;
+package com.LibraryCT.pages;
 
 import com.LibraryCT.utilities.Driver;
 import org.openqa.selenium.WebDriver;
