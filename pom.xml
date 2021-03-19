@@ -37,8 +37,8 @@
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
-                        <include>**/ParallelRun.java</include>
-<!--                        <include>**/CukesRunner.java</include>-->
+<!--                        <include>**/ParallelRun.java</include>-->
+                        <include>**/CukesRunner.java</include>
                     </includes>
                 </configuration>
             </plugin>
