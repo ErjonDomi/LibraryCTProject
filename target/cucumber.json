@@ -1,0 +1,127 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16627000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 684000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User login as a librarian",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.user_login_as_a_librarian()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 728000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on \"Users\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.LibraryCT.step_definitions.DataTable_StepDefinitions.user_click_on_link(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-19T04:05:37.552Z",
+        "line": 10,
+        "name": "verify user status",
+        "description": "",
+        "id": "user-status-feature;verify-user-status",
+        "after": [
+          {
+            "result": {
+              "duration": 2030000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1273000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user click Status dropdown",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.UserStatus_StepDefinitions.the_user_click_status_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user should see the following options:",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.UserStatus_StepDefinitions.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ACTIVE"
+                ]
+              },
+              {
+                "cells": [
+                  "INACTIVE"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@status"
+          }
+        ]
+      }
+    ],
+    "name": "user status feature",
+    "description": "",
+    "id": "user-status-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/userStatus.feature",
+    "tags": []
+  }
+]
