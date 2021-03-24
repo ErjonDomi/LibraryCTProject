@@ -12,7 +12,6 @@
 <!--    </groups>-->
     <parameter name="browser" value="chrome"> </parameter>
 
-
     <classes>
         <class name="com.LibraryCT.utilities.ParallelTesting"/>
     </classes>
