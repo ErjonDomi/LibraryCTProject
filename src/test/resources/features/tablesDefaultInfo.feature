@@ -5,7 +5,7 @@ Feature: Table with default info
     Given User is on the login page
     When User login as a Student
 
-  @default
+  @regression
   Scenario: Table columns names
     Then the user should see the table headers
       | Actions     |

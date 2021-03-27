@@ -4,7 +4,7 @@ Feature: Login Functionality
   Background:
     Given User is on the login page
 
-  @librarian
+  @smoke @regression
   Scenario: Login as a Librarian
       When User login as a librarian
       Then Dashboard should be displayed

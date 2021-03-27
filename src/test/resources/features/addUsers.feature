@@ -5,18 +5,18 @@ Feature: Add users
     Given User is on the login page
     When User login as a librarian
 
-  @addUser
+  @smoke @regression
   Scenario: Librarian should add users
     When User click on "Users" link
     Then Librarian add user
     Then User should be able to see new user name
 
-    @close
+  @regression
     Scenario: Librarian should click close button
       When User click on "Users" link
       Then User should be able to close the add user pop-up window
 
-    @edit
+  @smoke @regression
     Scenario: Librarians able to edit user info.
       When User click on "Users" link
       When User should be able to edit user information
