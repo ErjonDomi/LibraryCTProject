@@ -9,7 +9,7 @@ Feature: Login with parameters
     And User enter password 'AOYKYTMJ'
     And User click the sign in button
     Then Dashboard should be displayed
-    And There should be 2844 users
+    And There should be 4317 users
     #number can be whatever you have there
 
   @smoke @regression
