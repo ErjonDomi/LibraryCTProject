@@ -6,7 +6,7 @@ Feature: user status feature
     When User click on "Users" link
 
 
-    @status
+  @smoke @regression
   Scenario: verify user status
     And the user click Status dropdown
     Then the user should see the following options:

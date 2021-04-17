@@ -17,8 +17,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/LibraryCT/step_definitions",
         dryRun = false,
-        tags = "@status"
+        tags = "@firefox or @chrome"
 )
-//erjon
+
 public class CukesRunner {
 }

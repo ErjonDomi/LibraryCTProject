@@ -4,7 +4,7 @@ Background:
   Given User is on the login page
   When User login as a librarian
 
-@dataTable
+  @smoke @regression
 Scenario: verify default values in Users page
     And User click on "Users" link
     Then show records default value should be 10

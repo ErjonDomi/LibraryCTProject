@@ -15,10 +15,12 @@ public class Login_StepDefinitions {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
 
+
     @Given("User is on the login page")
     public void user_is_on_the_login_page() {
         String url = ConfigurationReader.getProperty("url");
         Driver.getDriver().get(url);
+
     }
 
     @When("User login as a Student")

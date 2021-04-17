@@ -1,7 +1,9 @@
 package com.LibraryCT.pages;
 
 
+import com.LibraryCT.utilities.Driver;
 import com.github.javafaker.Faker;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -62,6 +64,8 @@ public class UsersPage extends BasePage {
     @FindBy(xpath = "//select[@id='user_status']")
     public WebElement userStatusDropDown;
 
+
+
     public void addUser(){
         addUserLink.click();
         inputFullName.sendKeys(fullName);
@@ -106,4 +110,12 @@ public class UsersPage extends BasePage {
         }
         return list;
     }
+
+    public boolean userIsDisplayed(String name){
+        return Driver.getDriver().findElement(By.xpath("//span[.='"+name+"']")).isDisplayed();
+    }
+    public String getUser(String name){
+        return Driver.getDriver().findElement(By.xpath("//span[.='"+name+"']")).getText();
+    }
+
 }

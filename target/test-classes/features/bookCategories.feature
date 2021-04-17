@@ -6,7 +6,7 @@ Feature: Book Categories
     When User login as a Student
 
 
-    @bookCategories
+  @smoke @regression
   Scenario:
     When the user click the book categories dropdown
     Then User should be able to see all categories

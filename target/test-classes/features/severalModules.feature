@@ -4,7 +4,7 @@ Feature: Several Modules
   Background:
     Given User is on the login page
 
-  @studentModules
+   @regression
   Scenario: Students should have access to 2 modules
     When User login as a Student
     Then User should see following modules
@@ -12,7 +12,7 @@ Feature: Several Modules
       | Borrowing Books |
 
 
-  @librarianModules
+  @regression
   Scenario: Librarians  should have access to 3 modules
     When User login as a librarian
     Then User should see following modules

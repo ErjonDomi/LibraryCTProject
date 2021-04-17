@@ -5,7 +5,7 @@ Feature: Borrowing Books
     Given User is on the login page
     When User login as a Student
 
-  @borrow
+  @smoke @regression
   Scenario: borrowing books table columns names
     When the user click Borrowing Books module
     Then the user should see the following column names:

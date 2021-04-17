@@ -27,6 +27,17 @@ public class LoginPage extends BasePage {
         inputPassword.sendKeys(ConfigurationReader.getProperty("librarian_password"));
         submitButton.click();
     }
+    public void logInAsLibrarian(String username, String password){
+        inputEmail.sendKeys(username);
+        inputPassword.sendKeys(password);
+        submitButton.click();
+    }
+
+    public void logInAsStudent(String username, String password){
+        inputEmail.sendKeys(username);
+        inputPassword.sendKeys(password);
+        submitButton.click();
+    }
 
 
 

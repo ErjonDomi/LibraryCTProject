@@ -1,6 +1,8 @@
 package com.LibraryCT.pages;
 
 
+import com.LibraryCT.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -21,6 +23,12 @@ public class BooksPage extends BasePage {
 
     @FindBy(xpath = "//table[@id='borrowed_list']//th")
     public List<WebElement> borrowingBooksHeaders;
+
+    @FindBy(xpath = "//span[.='Books']")
+    public WebElement userModule;
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement searchBox;
+
 
     public List<String> actualHeaderList(){
         List<String> headerList = new ArrayList<>();
@@ -47,4 +55,12 @@ public class BooksPage extends BasePage {
         }
         return list;
     }
+
+    public String getName(String name){
+
+        return Driver.getDriver().findElement(By.xpath("//tbody/tr/td[.='"+name+"']")).getText();
+
+    }
+
+
 }

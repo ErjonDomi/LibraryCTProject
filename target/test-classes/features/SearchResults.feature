@@ -6,7 +6,7 @@ Feature: Search Result
     When User login as a librarian
     And User click on "Users" link
 
-    @columnsName
+  @smoke @regression
   Scenario: Table columns names
     Then table should have following column names:
       | Actions   |
